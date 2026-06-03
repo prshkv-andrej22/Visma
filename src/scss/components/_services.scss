@@ -1,0 +1,16 @@
+@use '../utils/' as *;
+
+.services {
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding-top: clamp(50px, 8vw, 150px);
+        padding-bottom: clamp(50px, 8vw, 150px);
+    }
+    &__info {
+        grid-column: 3 span;
+    }
+    &__services-cards {
+        grid-column: 5/13;
+    }
+}

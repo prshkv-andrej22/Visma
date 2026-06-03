@@ -1,0 +1,20 @@
+@use "sass:math";
+
+@mixin adaptive-font($min-fs, $max-fs, $min-width: 375, $max-width: 1440) {
+  font-size: clamp(
+    #{$min-fs}px,
+    #{$min-fs}px + (#{$max-fs} - #{$min-fs}) *
+      ((100vw - #{$min-width}px) / (#{$max-width} - #{$min-width})),
+    #{$max-fs}px
+  );
+}
+@mixin btn {
+  display: inline-block;
+  max-width: fit-content;
+  text-transform: none;
+}
+
+@mixin padding-section-y {
+  padding-top: clamp(44px, 8vw, 100px);
+  padding-bottom: clamp(44px, 8vw, 100px);
+}

@@ -1,0 +1,58 @@
+@use "../utils/" as *;
+
+.hero {
+  background-image: url("../../images/hero-background.png");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+background-size: cover;
+  padding-top: clamp(40px, 8vw, 113px);
+  padding-bottom: clamp(40px, 8vw, 113px);
+  &__title {
+    margin-bottom: 40px;
+    color: $color-light;
+    @include adaptive-font(30, 50);
+    line-height: 140%;
+    letter-spacing: 0%;
+    @include mobile-m {
+        margin-bottom: 20px;
+    }
+  }
+  &__descr {
+    margin-bottom: 60px;
+    color: $color-light;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    @include mobile-m {
+        margin-bottom: 35px;
+    }
+  }
+  &__about {
+    display: flex;
+    align-items: center;
+    color: $color-light;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    column-gap: 15px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    @include mobile-m {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+  }
+  
+  &__content {
+    grid-column: 5 span;
+  }
+  &__services {
+    grid-column: 7/13;
+  }
+}

@@ -1,0 +1,31 @@
+@use "../utils/" as *;
+
+.files {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__link {
+    color: $color-primary;
+    line-height: 140%;
+    letter-spacing: 0%;
+    position: relative;
+    text-decoration: underline dotted;
+  }
+  &__format {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    color: $color-light;
+    background-color: $color-secondary;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin-left: 20px;
+  }
+}

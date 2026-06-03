@@ -1,0 +1,57 @@
+@use "../utils/" as *;
+
+.services-cards {
+  &__title {
+    color: $color-light;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+  }
+  &__name {
+    color: $color-light;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+  &--height-big {
+    grid-auto-rows: minmax(250px, auto);
+  }
+  &--height-md {
+    grid-auto-rows: minmax(233px, auto);
+  }
+  &--cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    @include tablet {
+      grid-auto-rows: minmax(180px, auto);
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 35px;
+    border-radius: 20px;
+    @include tablet {
+      padding: 20px;
+    }
+
+    &--bg-secondary {
+      background-color: $color-secondary;
+    }
+    &--bg-primary {
+      background-color: $color-primary;
+    }
+  }
+}

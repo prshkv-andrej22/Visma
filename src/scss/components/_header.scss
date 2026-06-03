@@ -1,0 +1,181 @@
+@use "../utils/" as *;
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &__nav {
+    @include tablet {
+      order: 4;
+      width: 100%;
+      padding-top: 30px;
+    }
+    @include mobile {
+      display: none;
+            padding-top: 10px;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    column-gap: clamp(10px, 10px + (100vw - 768px) * 20 / 1152, 30px);
+    @include tablet {
+      justify-content: space-between;
+    }
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+      column-gap: 0;
+
+    }
+  }
+  &__nav-link {
+    @include adaptive-font(14, 16);
+    @include mobile {
+        font-size: 20px;
+    }
+  }
+}
+
+.logo {
+  @include tablet {
+    margin-right: auto;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  @include tablet {
+    margin-right: 30px;
+  }
+  @include mobile {
+    display: none;
+  }
+  &__field {
+    max-width: 150px;
+    min-width: 100px;
+    width: 100%;
+    margin-left: 20px;
+    border: 0;
+    border-bottom: 1px solid rgba($color-dark, .2);
+    color: $color-dark;
+    &:focus {
+        outline: none;
+    }
+  }
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  column-gap: 10px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 20px;
+  z-index: 1001; // выше меню
+
+  @include mobile {
+    display: flex;
+  }
+
+  &__line {
+    width: 100%;
+    height: 3px;
+    background-color: $color-dark;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+
+  // Анимация в крестик при активном состоянии
+  &.active &__line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  &.active &__line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  &.active &__line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+// Оверлей
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// Мобильное меню (выезжает справа)
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  max-width: 400px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+
+  &.active {
+    right: 0;
+  }
+
+  &__content {
+    padding: 80px 20px 30px 20px; // отступ сверху, чтобы не перекрывать бургер
+
+    .header__nav-list {
+      flex-direction: column;
+      row-gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .search {
+      display: flex;
+      width: 100%;
+      .search__field {
+        max-width: 60%;
+        margin-left: 20px;
+      }
+    }
+  }
+}

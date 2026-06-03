@@ -1,0 +1,32 @@
+@use "../utils/" as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "PT Sans";
+  font-weight: 400;
+  color: $color-dark;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.section-title {
+  @include adaptive-font(20, 40);
+  margin-bottom: 60px;
+  font-weight: 700;
+  line-height: 140%;
+
+}
+
+.container {
+  max-width: 1336px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  @include mobile-m {
+    padding: 0 20px;
+  }
+}
