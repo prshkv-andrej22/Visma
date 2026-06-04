@@ -1,176 +1,287 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Visma</title>
-  </head>
-  <body>
-    @@include('../components/header.html')
-    <main>
-      <section class="hero">
-        <div class="hero__inner container">
-          <div class="hero__content">
-            <h1 class="hero__title">Тавимский морской порт VISMA</h1>
-            <p class="hero__descr">
-              Vel posuere nibh odio placerat massa vel tellus tortor. Varius
-              eget nunc scelerisque etiam felis facilisi ante viverra sem. Nunc
-              eros elementum.
-            </p>
-            <a href="" class="hero__about">
-              О компании
-              <svg
-                viewBox="0 0 30 30"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="30.000000"
-                height="30.000000"
-                fill="none"
-                customFrame="#000000"
-              >
-                <defs>
-                  <clipPath id="clipPath_0">
-                    <rect
-                      width="18.000000"
-                      height="18.000000"
-                      x="4.000000"
-                      y="6.000000"
-                      fill="rgb(255,255,255)"
-                    />
-                  </clipPath>
-                </defs>
-                <g id="Group 7">
-                  <circle
-                    id="Ellipse 1"
-                    cx="15"
-                    cy="15"
-                    r="14"
-                    stroke="rgb(255,255,255)"
-                    stroke-width="2.000000"
-                  />
-                  <g
-                    id="mdi:arrow-right-thin"
-                    clip-path="url(#clipPath_0)"
-                    customFrame="url(#clipPath_0)"
-                  >
-                    <rect
-                      id="mdi:arrow-right-thin"
-                      width="18.000000"
-                      height="18.000000"
-                      x="4.000000"
-                      y="6.000000"
-                      fill="rgb(255,255,255)"
-                      fill-opacity="0"
-                    />
-                    <path
-                      id="Vector"
-                      d="M14.5001 18.705L14.5001 15.705L7.8101 15.705L7.7876 14.1975L14.5001 14.1975L14.5001 11.205L18.2501 14.955L14.5001 18.705Z"
-                      fill="rgb(255,255,255)"
-                      fill-rule="nonzero"
-                    />
-                  </g>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Visma</title>
+</head>
+
+<body>
+  @@include('../components/header.html')
+  <main>
+    <section class="hero">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <h1 class="hero__title">Тавимский морской порт VISMA</h1>
+          <p class="hero__descr">
+            Vel posuere nibh odio placerat massa vel tellus tortor. Varius
+            eget nunc scelerisque etiam felis facilisi ante viverra sem. Nunc
+            eros elementum.
+          </p>
+          <a href="" class="hero__about">
+            О компании
+            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="30.000000" height="30.000000" fill="none" customFrame="#000000">
+              <defs>
+                <clipPath id="clipPath_0">
+                  <rect width="18.000000" height="18.000000" x="4.000000" y="6.000000" fill="rgb(255,255,255)" />
+                </clipPath>
+              </defs>
+              <g id="Group 7">
+                <circle id="Ellipse 1" cx="15" cy="15" r="14" stroke="rgb(255,255,255)" stroke-width="2.000000" />
+                <g id="mdi:arrow-right-thin" clip-path="url(#clipPath_0)" customFrame="url(#clipPath_0)">
+                  <rect id="mdi:arrow-right-thin" width="18.000000" height="18.000000" x="4.000000" y="6.000000"
+                    fill="rgb(255,255,255)" fill-opacity="0" />
+                  <path id="Vector"
+                    d="M14.5001 18.705L14.5001 15.705L7.8101 15.705L7.7876 14.1975L14.5001 14.1975L14.5001 11.205L18.2501 14.955L14.5001 18.705Z"
+                    fill="rgb(255,255,255)" fill-rule="nonzero" />
                 </g>
-              </svg>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="hero__services">
+          <ul class="services-cards services-cards--cols-2 services-cards--height-big">
+            <li class="services-cards__item services-cards__item--bg-secondary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">
+                Погрузочно-разгрузочная деятельность
+              </p>
+            </li>
+            <li class="services-cards__item services-cards__item--bg-secondary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">Хранение грузов</p>
+            </li>
+            <li class="services-cards__item services-cards__item--bg-secondary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">Складские операции</p>
+            </li>
+            <li class="services-cards__item services-cards__item--bg-secondary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">Швартовые операции</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__inner container">
+        <div class="services__info">
+          <h2 class="section-title">Услуги</h2>
+          <ul class="files">
+            <li class="files__item">
+              <a href="" class="files__link">
+                Тарифы на услуги по обеспечению контроля доступа на территорию
+                VISMA на 2022 год
+              </a>
+              <span class="files__format">Pdf</span>
+            </li>
+            <li class="files__item">
+              <a href="" class="files__link">
+                Условия определения цены договора и тарифы на работы
+              </a>
+              <span class="files__format">Pdf</span>
+            </li>
+            <li class="files__item">
+              <a href="" class="files__link">
+                Договор перевалки (типовая форма)
+              </a>
+              <span class="files__format">Pdf</span>
+            </li>
+          </ul>
+        </div>
+        <div class="services__services-cards">
+          <ul class="services-cards services-cards--cols-2 services-cards--height-md">
+            <li class="services-cards__item services-cards__item--bg-primary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">
+                Хранение грузов
+              </p>
+            </li>
+            <li class="services-cards__item services-cards__item--bg-primary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">Швартовые операции</p>
+            </li>
+            <li class="services-cards__item services-cards__item--bg-primary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">Складские операции</p>
+            </li>
+            <li class="services-cards__item services-cards__item--bg-primary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">Агентское обслуживание судов</p>
+            </li>
+            <li class="services-cards__item services-cards__item--bg-primary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">Буксировка / сопровождение судов</p>
+            </li>
+            <li class="services-cards__item services-cards__item--bg-primary">
+              <h3 class="services-cards__title">Услуги</h3>
+              <p class="services-cards__name">Погрузочно-разгрузочная деятельность</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__inner container">
+        <h2 class="section-title">
+          О компании
+        </h2>
+        <div class="about__wrapper">
+          <div class="about__main">
+            <p class="about__descr">
+              Tristique orci consectetur sit felis. Sed ac auctor tellus lobortis. Enim non turpis nulla nec a sapien
+              sit
+              amet molestie. Et id malesuada gravida sit volutpat. Volutpat sed lectus elementum diam neque facilisis
+              in.
+              Convallis nibh sem in viverra quis. Interdum pharetra.
+            </p>
+            <p class="about__descr">
+              Libero nunc porttitor id mi convallis ultricies convallis erat. At sagittis nisi at in diam sit.
+            </p>
+            <ul class="about__list">
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus. Vivamus tincidunt non lectus odio magna
+                semper
+                odio risus. Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+            </ul>
+            <p class="about__descr">
+              Quam accumsan mauris enim quam. A commodo ultrices urna vitae nibh rhoncus at nisl. Duis nibh libero ut
+              enim. Metus aliquam cursus molestie sapien risus. Suspendisse volutpat.
+            </p>
+            <ul class="about__list">
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+              <li class="about__list-item">
+                Vivamus tincidunt non lectus odio magna semper odio risus.
+              </li>
+            </ul>
+          </div>
+          <div class="about__info">
+            <div class="about__video">
+              <a href="">
+                <img src="../../images/about-video-img.png" alt="" class="about__video-preview">
+                <svg class="play-btn" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="80.000000" height="80.000000" fill="none">
+                  <rect id="material-symbols:play-circle-rounded" width="80.000000" height="80.000000" x="0.000000"
+                    y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+                  <path id="Vector"
+                    d="M31.6666 31.0834L31.6666 48.9167C31.6666 50.1945 32.25 51.1667 33.4166 51.8334C34.5833 52.5001 35.7222 52.4445 36.8333 51.6667L50.6666 42.8334C51.7222 42.1667 52.25 41.2223 52.25 40.0001C52.25 38.7779 51.7222 37.8334 50.6666 37.1667L36.8333 28.3334C35.7222 27.5556 34.5833 27.5001 33.4166 28.1667C32.25 28.8334 31.6666 29.8056 31.6666 31.0834ZM40 73.3334C35.3888 73.3334 31.0555 72.4579 27 70.7067C22.9444 68.9579 19.4166 66.5834 16.4166 63.5834C13.4166 60.5834 11.0422 57.0556 9.29329 53.0001C7.54218 48.9445 6.66663 44.6112 6.66663 40.0001C6.66663 35.389 7.54218 31.0556 9.29329 27.0001C11.0422 22.9445 13.4166 19.4167 16.4166 16.4167C19.4166 13.4167 22.9444 11.0412 27 9.29008C31.0555 7.54119 35.3888 6.66675 40 6.66675C44.6111 6.66675 48.9444 7.54119 53 9.29008C57.0555 11.0412 60.5833 13.4167 63.5833 16.4167C66.5833 19.4167 68.9577 22.9445 70.7066 27.0001C72.4577 31.0556 73.3333 35.389 73.3333 40.0001C73.3333 44.6112 72.4577 48.9445 70.7066 53.0001C68.9577 57.0556 66.5833 60.5834 63.5833 63.5834C60.5833 66.5834 57.0555 68.9579 53 70.7067C48.9444 72.4579 44.6111 73.3334 40 73.3334Z"
+                    fill="rgb(255,255,255)" fill-rule="nonzero" />
+                </svg>
+              </a>
+            </div>
+            <div class="calc-link">
+              <a href="" class="calc-link__wrapper"></a>
+              <p class="calc-link__name">
+                Запрос ставки и условий погрузочно-разгрузочных работ
+              </p>
+              <p class="calc-link__subname">
+                Рассчитайте моментально стоимость полных портовых услуг в порту VISMA
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__inner container">
+        <div class="news__info">
+          <h2 class="section-title">
+            Новости
+          </h2>
+          <a href="#" class="news__btn">
+            Все новости
+            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="30.000000" height="30.000000" fill="none" customFrame="#000000">
+              <defs>
+                <clipPath id="clipPath_0">
+                  <rect width="18.000000" height="18.000000" x="4.000000" y="6.000000" fill="" />
+                </clipPath>
+              </defs>
+              <g id="Group 7">
+                <circle id="Ellipse 1" cx="15" cy="15" r="14" stroke="" stroke-width="2.000000" />
+                <g id="mdi:arrow-right-thin" clip-path="url(#clipPath_0)" customFrame="url(#clipPath_0)">
+                  <!-- <rect id="mdi:arrow-right-thin" width="18.000000" height="18.000000" x="4.000000" y="6.000000"
+                    fill="" fill-opacity="0" /> -->
+                  <path id="Vector"
+                    d="M14.5001 18.705L14.5001 15.705L7.8101 15.705L7.7876 14.1975L14.5001 14.1975L14.5001 11.205L18.2501 14.955L14.5001 18.705Z"
+                    fill="" fill-rule="nonzero" />
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="news__main">
+          <article class="news-card">
+            <a href="" class="news-card__link">
+            <img src="../../images/news-img-1.png" alt="" class="news-card__img">
+            <span class="news-card__date">20/05/22</span>
+            <p class="news-card__name">Semper eu pulvinar eget integer</p>
+            <p class="news-card__descr">
+              Pretium duis phasellus netus ac. Nunc nibh nunc integer feugiat et aliquam cras. Amet pharetra montes ipsum gravida tellus tellus.
+            </p>
             </a>
-          </div>
-          <div class="hero__services">
-            <ul
-              class="services-cards services-cards--cols-2 services-cards--height-big"
-            >
-              <li
-                class="services-cards__item services-cards__item--bg-secondary"
-              >
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">
-                  Погрузочно-разгрузочная деятельность
-                </p>
-              </li>
-              <li
-                class="services-cards__item services-cards__item--bg-secondary"
-              >
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">Хранение грузов</p>
-              </li>
-              <li
-                class="services-cards__item services-cards__item--bg-secondary"
-              >
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">Складские операции</p>
-              </li>
-              <li
-                class="services-cards__item services-cards__item--bg-secondary"
-              >
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">Швартовые операции</p>
-              </li>
-            </ul>
-          </div>
+          </article>
+          <article class="news-card">
+            <a href="" class="news-card__link">
+            <img src="../../images/news-img-2.png" alt="" class="news-card__img">
+            <span class="news-card__date">20/02/22</span>
+            <p class="news-card__name">Vitae id nec nulla sit nunc cursus curabitur tempus vel enim.</p>
+            <p class="news-card__descr">
+              Cras arcu ac commodo suspendisse commodo ipsum turpis dui. Quis pharetra malesuada eget sit egestas et integer. Suspendisse a.
+            </p>
+            </a>
+          </article>
+          <article class="news-card">
+            <a href="" class="news-card__link">
+            <img src="../../images/news-img-3.png" alt="" class="news-card__img">
+            <span class="news-card__date">30/12/21</span>
+            <p class="news-card__name">Integer nisi sagittis in aliquet. Enim eget varius lacinia est a.</p>
+            <p class="news-card__descr">
+              Lectus tempus felis pretium vitae. Tempor massa vestibulum condimentum cursus diam quam. Mattis facilisi dignissim donec eget vel.
+            </p>
+            </a>
+          </article>
+          <article class="news-card">
+            <a href="" class="news-card__link">
+            <img src="../../images/news-img-4.png" alt="" class="news-card__img">
+            <span class="news-card__date">29/06/21</span>
+            <p class="news-card__name">Facilisis vitae proin quis</p>
+            <p class="news-card__descr">
+              Iaculis diam quam velit sit nunc turpis ultricies elementum. Vitae lacinia tristique rutrum faucibus nulla quis ultricies. Risus.
+            </p>
+            </a>
+          </article>
         </div>
-      </section>
-      <section class="services">
-        <div class="services__inner container">
-          <div class="services__info">
-            <h2 class="section-title">Услуги</h2>
-            <ul class="files">
-              <li class="files__item">
-                <a href="" class="files__link">
-                  Тарифы на услуги по обеспечению контроля доступа на территорию
-                  VISMA на 2022 год
-                </a>
-                <span class="files__format">Pdf</span>
-              </li>
-              <li class="files__item">
-                <a href="" class="files__link">
-                  Условия определения цены договора и тарифы на работы
-                </a>
-                <span class="files__format">Pdf</span>
-              </li>
-              <li class="files__item">
-                <a href="" class="files__link">
-                  Договор перевалки (типовая форма)
-                </a>
-                <span class="files__format">Pdf</span>
-              </li>
-            </ul>
-          </div>
-          <div class="services__services-cards">
-            <ul
-              class="services-cards services-cards--cols-2 services-cards--height-md"
-            >
-              <li class="services-cards__item services-cards__item--bg-primary">
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">
-                  Хранение грузов
-                </p>
-              </li>
-              <li class="services-cards__item services-cards__item--bg-primary">
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">Швартовые операции</p>
-              </li>
-              <li class="services-cards__item services-cards__item--bg-primary">
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">Складские операции</p>
-              </li>
-              <li class="services-cards__item services-cards__item--bg-primary">
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">Агентское обслуживание судов</p>
-              </li>
-              <li class="services-cards__item services-cards__item--bg-primary">
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">Буксировка / сопровождение судов</p>
-              </li>
-              <li class="services-cards__item services-cards__item--bg-primary">
-                <h3 class="services-cards__title">Услуги</h3>
-                <p class="services-cards__name">Погрузочно-разгрузочная деятельность</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-    @@include('../components/footer.html')
-    <script src="js/main.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  @@include('../components/footer.html')
+  <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -4,17 +4,17 @@
   background-image: url("../../images/hero-background.png");
   background-repeat: no-repeat;
   background-position: top 0 right 0;
-background-size: cover;
+  background-size: cover;
   padding-top: clamp(40px, 8vw, 113px);
   padding-bottom: clamp(40px, 8vw, 113px);
   &__title {
     margin-bottom: 40px;
     color: $color-light;
-    @include adaptive-font(30, 50);
+    @include adaptive-font(35, 50);
     line-height: 140%;
     letter-spacing: 0%;
     @include mobile-m {
-        margin-bottom: 20px;
+      margin-bottom: 20px;
     }
   }
   &__descr {
@@ -24,7 +24,7 @@ background-size: cover;
     line-height: 140%;
     letter-spacing: 0%;
     @include mobile-m {
-        margin-bottom: 35px;
+      margin-bottom: 35px;
     }
   }
   &__about {
@@ -43,12 +43,12 @@ background-size: cover;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 30px;
     @include mobile-m {
-        display: flex;
-        flex-direction: column;
-        row-gap: 30px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
     }
   }
-  
+
   &__content {
     grid-column: 5 span;
   }

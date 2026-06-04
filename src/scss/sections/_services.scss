@@ -4,8 +4,13 @@
     &__inner {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        padding-top: clamp(50px, 8vw, 150px);
-        padding-bottom: clamp(50px, 8vw, 150px);
+        padding-top: clamp(30px, 8vw, 150px);
+        padding-bottom: clamp(30px, 8vw, 150px);
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
     }
     &__info {
         grid-column: 3 span;

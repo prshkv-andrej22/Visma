@@ -4,10 +4,19 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  @include tablet {
+    row-gap: 10px;
+  }
   &__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include tablet {
+      width: 60%;
+    }
+    @include mobile-m {
+      width: 100%;
+    }
   }
   &__link {
     color: $color-primary;
